@@ -31,7 +31,7 @@ def inference(model, image_array, processor, device):
     return caption
 
 
-def main(image_array):
+def captioning(image_array):
     """
     np.ndarray 형태의 이미지를 받아 캡션을 생성하고 문자열로 반환.
     weight_path: Fine-tuned된 모델 가중치 파일 경로 (선택 사항)
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     test_image_array = np.array(test_image)
 
     # 이미지 ndarray를 main에 전달
-    caption = main(test_image_array)
+    caption = captioning(test_image_array)
